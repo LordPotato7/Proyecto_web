@@ -1,6 +1,6 @@
-html,
 body {
   height: 100%;
+  background-color: #4c4c4c !important;
 }
 
 body {
@@ -30,4 +30,19 @@ body {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-brand {
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+.navbar-nav {
+  margin-right: 20px;
 }
