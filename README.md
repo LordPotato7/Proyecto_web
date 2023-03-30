@@ -1,2 +1,2 @@
-# Proyecto_web
-Proyecto de programacion web 
+# Proyecto web NihonPc
+Proyecto de programacion web para crear una web de ventas online
