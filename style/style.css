@@ -68,8 +68,6 @@ footer{
     text-shadow: 1px 1px 2px #999;
   }
   
-  
-  
 .footer-container li.menu-item {
   margin-right: 1rem;
 }
@@ -83,3 +81,20 @@ footer{
     opacity: 0.3;
     text-align: center;
 }
+
+a {
+    font-size:14px;
+    font-weight:700
+  }
+  .superNav {
+    font-size:13px;
+  }
+  .form-control {
+    outline:none !important;
+    box-shadow: none !important;
+  }
+  @media screen and (max-width:540px){
+    .centerOnMobile {
+      text-align:center
+    }
+  }
