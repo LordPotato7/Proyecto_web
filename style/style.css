@@ -1,12 +1,18 @@
+
+
 body{
     height: 100vh;
     width: 100%;
     position: relative;
+    background-color: #474747;
+    margin: 0;
+    min-height: 100vh;
+    flex-wrap: wrap;
 }
 
 footer{
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     padding: 2rem 8%;
@@ -15,6 +21,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    align-self: flex-end;
 }
 
 .logo{
@@ -68,8 +75,6 @@ footer{
     text-shadow: 1px 1px 2px #999;
   }
   
-  
-  
 .footer-container li.menu-item {
   margin-right: 1rem;
 }
@@ -83,3 +88,59 @@ footer{
     opacity: 0.3;
     text-align: center;
 }
+
+.navbar.bg-body-tertiary {
+    background-color: #141414 !important;
+}
+
+.navbar-nav li a {
+    color: #fff !important;
+}
+
+.dropdown-menu {
+    background-color: #333;
+  }
+  
+.dropdown-toggle {
+    color: #141414 !important;
+}
+.dropdown-item:hover {
+    background-color: black;
+}
+  
+.form-btn i {
+    font-size: 1.2em;
+}
+  
+.navbar-toggler {
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 10px;
+    color: #333;
+}
+
+.btn-outline-secondary {
+    background-color: #333;
+    color: #fff;
+}
+
+.form-btn {
+    margin-right: 10px;
+}
+
+.text-justify {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-bottom: 350px;
+  }
+
+.grande {
+    font-size: 24px;
+}
+  
+.containerne {
+    color: #fff;
+}  
