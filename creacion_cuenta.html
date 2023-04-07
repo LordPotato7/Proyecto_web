@@ -11,9 +11,16 @@
 <body class="bg-dark">
   <div class="login">
 
-    <h1 class="text-center">Iniciar sesion</h1>
+    <h1 class="text-center">Creacion de Cuenta</h1>
     
     <form class="needs-validation">
+        <div class="form-group was-validated">
+            <label class="form-label" for="Nombre">Nombre</label>
+            <input class="form-control" type="text" id="Nombre" required>
+            <div class="invalid-feedback">
+                Porfavor ingresa tu Nombre
+            </div>
+        </div>
         <div class="form-group was-validated">
             <label class="form-label" for="email">Email</label>
             <input class="form-control" type="email" id="email" required>
@@ -28,11 +35,15 @@
                 Por favor ingresa tu paswword
             </div>
         </div>
-        <div class="form-group form-check">
-            <input class="form-check-input" type="checkbox" id="check">
-            <label class="form-check-label" for="check">Recordar</label>
+        <div class="form-group was-validated">
+            <label class="form-label" for="password">Repite tu Contraseña</label>
+            <input class="form-control" type="password" id="password" required>
+            <div class="invalid-feedback">
+                Por favor ingresa tu paswword
+            </div>
         </div>
-        <a class="btn btn-primary" href="index_sesion.html">Ingresar</a>     
+        
+        <a class="btn btn-primary" href="sesion.html">Crear</a>     
     </form>
 
     </div>
