@@ -1,12 +1,18 @@
+
+
 body{
     height: 100vh;
     width: 100%;
     position: relative;
+    background-color: #474747;
+    margin: 0;
+    min-height: 100vh;
+    flex-wrap: wrap;
 }
 
 footer{
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     padding: 2rem 8%;
@@ -15,6 +21,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    align-self: flex-end;
 }
 
 .logo{
@@ -101,9 +108,8 @@ footer{
     background-color: black;
 }
   
-.btn-outline-success {
-    background-color: green;
-    color: #fff;
+.form-btn i {
+    font-size: 1.2em;
 }
   
 .navbar-toggler {
@@ -115,11 +121,26 @@ footer{
 }
 
 .btn-outline-secondary {
-    background-color: #921492;
+    background-color: #333;
     color: #fff;
 }
 
 .form-btn {
     margin-right: 10px;
 }
+
+.text-justify {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-bottom: 350px;
+  }
+
+.grande {
+    font-size: 24px;
+}
   
+.containerne {
+    color: #fff;
+}  
