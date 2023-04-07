@@ -82,19 +82,44 @@ footer{
     text-align: center;
 }
 
-a {
-    font-size:14px;
-    font-weight:700
+.navbar.bg-body-tertiary {
+    background-color: #141414 !important;
+}
+
+.navbar-nav li a {
+    color: #fff !important;
+}
+
+.dropdown-menu {
+    background-color: #333;
   }
-  .superNav {
-    font-size:13px;
-  }
-  .form-control {
-    outline:none !important;
-    box-shadow: none !important;
-  }
-  @media screen and (max-width:540px){
-    .centerOnMobile {
-      text-align:center
-    }
-  }
+  
+.dropdown-toggle {
+    color: #141414 !important;
+}
+.dropdown-item:hover {
+    background-color: black;
+}
+  
+.btn-outline-success {
+    background-color: green;
+    color: #fff;
+}
+  
+.navbar-toggler {
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 10px;
+    color: #333;
+}
+
+.btn-outline-secondary {
+    background-color: #921492;
+    color: #fff;
+}
+
+.form-btn {
+    margin-right: 10px;
+}
+  
