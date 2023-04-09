@@ -1,27 +1,22 @@
-
-
 body{
     height: 100vh;
     width: 100%;
-    position: relative;
-    background-color: #474747;
-    margin: 0;
+    position: absolute;
     min-height: 100vh;
     flex-wrap: wrap;
 }
 
 footer{
     width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    padding: 2rem 8%;
+    position: relative;
     background-color: #141414;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     align-self: flex-end;
+    bottom: 0;
+    padding: 4rem 0;
 }
 
 .logo{
@@ -129,18 +124,40 @@ footer{
     margin-right: 10px;
 }
 
-.text-justify {
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 5px;
-    margin-bottom: 350px;
-  }
-
-.grande {
-    font-size: 24px;
+.section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
   
-.containerne {
-    color: #fff;
-}  
+.section:nth-of-type(2) {
+    flex-direction: row-reverse;
+}
+
+.section:nth-of-type(3) {
+    flex-direction: row;
+}
+  
+.section:nth-of-type(4) {
+    flex-direction: row-reverse;
+}
+  
+.section-image {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 50%;
+    max-height: 100px;
+}
+
+.section-text {
+    margin:20px;
+    text-align: justify;
+}    
+
+.section-title {
+    margin-top: 1rem;
+    text-align: center;
+}
+  
