@@ -181,5 +181,17 @@ footer{
     padding: 30px;
 }
   
+.section-text1 {
+    margin:20px;
+    text-align: center;
+} 
 
-  
+.section-text2 {
+    margin:40px;
+    text-align: justify;
+} 
+
+.section-title1 {
+    margin: 20px;
+    text-align: justify;
+}
