@@ -161,3 +161,25 @@ footer{
     text-align: center;
 }
   
+.redes-sociales li {
+    display: block;
+    margin-right: 10px;
+}
+  
+.redes-sociales li a {
+    color: #555;
+    text-decoration: none;
+    font-size: 20px;
+}
+  
+.redes-sociales li a i {
+    margin-right: 5px;
+}
+
+.section-conta {
+    list-style-type: none;
+    padding: 30px;
+}
+  
+
+  
