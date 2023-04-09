@@ -9,6 +9,7 @@
         rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
         crossorigin="anonymous">
   <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 <nav class="navbar navbar-expand-md bg-body-tertiary">
   <div class="container-fluid">
@@ -20,34 +21,74 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+            Categorias
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="teclados.html">Teclados</a></li>
+            <li><a class="dropdown-item" href="mouse.html">Mouse</a></li>
+            <li><a class="dropdown-item" href="tarjetas.html">Tarjetas de Video</a></li>
+            <li><a class="dropdown-item" href="procesadores.html">Procesadores</a></li>
+            <li><a class="dropdown-item" href="almacenamiento.html">Almacenamiento</a></li>
+            <li><a class="dropdown-item" href="gabinetes.html">Gabinetes</a></li>
+            <li><a class="dropdown-item" href="placas.html">Placas Madre</a></li>
+            <li><a class="dropdown-item" href="fuentes.html">Fuentes de poder</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
+          <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
         </li>
-      </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="contactos.html">Contactos</a>
+        </li>
+      </ul>      
       <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <input class="form-control me-2" type="search" placeholder="Busca tu producto..." aria-label="Search">
+        <button class="btn btn-outline-secondary form-btn" type="submit"><i class="fa fa-search"></i></button>
       </form>
+      <a class="btn btn-outline-secondary" href="#">Iniciar sesión</a>     
     </div>
   </div>
 </nav>
+<div class="terminos-y-condiciones">
+  <h1 class="section-title">Bienvenido a los términos y condiciones de uso de NihonPC</h1>
+  <p class="section-text1">Una tienda de hardware y periféricos ubicada en Chile. 
+      A continuación, se detallan las condiciones de uso que rigen su interacción con nuestro sitio web, tienda en línea y cualquier otro servicio que ofrezcamos.</p>
+  <h2 class="section-title1">Aceptación de los términos y condiciones</h2>
+  <p class="section-text2">Al utilizar nuestros servicios, usted acepta nuestros términos y condiciones en su totalidad. 
+     Si no está de acuerdo con alguno de los términos, le recomendamos que no utilice nuestros servicios. 
+     Nos reservamos el derecho de modificar estos términos y condiciones en cualquier momento, sin previo aviso. 
+     Cualquier cambio en los términos y condiciones se aplicará a partir del momento en que se publiquen en nuestro sitio web.</p>
+  <h2 class="section-title1">Propiedad intelectual</h2>
+  <p class="section-text2">Todo el contenido presente en nuestro sitio web, incluyendo pero no limitado a texto, imágenes, gráficos, logotipos, diseño y código fuente, es propiedad exclusiva de NihonPC y está protegido por las leyes de propiedad intelectual de Chile y otros países. 
+     Queda prohibido el uso no autorizado de cualquier contenido de nuestro sitio web.</p>
+  <h2 class="section-title1">Privacidad</h2>
+  <p class="section-text2">La privacidad de nuestros usuarios es de gran importancia para nosotros. 
+     Por favor, lea nuestra Política de Privacidad para conocer cómo manejamos su información personal.</p>
+  <h2 class="section-title1">Precios y disponibilidad</h2>
+  <p class="section-text2">Nos esforzamos por mantener precios precisos y una amplia disponibilidad de productos en nuestro sitio web, pero no podemos garantizar la disponibilidad de ningún producto en particular. 
+     Nos reservamos el derecho de modificar los precios en cualquier momento sin previo aviso.</p>
+  <h2 class="section-title1">Compras</h2>
+  <p class="section-text2">Todas las compras realizadas en nuestro sitio web están sujetas a los términos y condiciones aquí establecidos. 
+     Al realizar una compra, usted acepta pagar el precio total de los productos, así como cualquier costo adicional como impuestos y gastos de envío. 
+     Todas las ventas son finales, a menos que se especifique lo contrario en nuestros términos y condiciones de devolución.</p>
+  <h2 class="section-title1">Envíos y entregas</h2>
+  <p class="section-text2">Hacemos todo lo posible para que sus productos sean entregados lo más rápido posible. 
+     Por favor, consulte nuestra Política de Envío para obtener más información sobre los tiempos de entrega y los métodos de envío disponibles.</p>
+  <h2 class="section-title1">Devoluciones y garantías</h2>
+  <p class="section-text2">Ofrecemos una política de devolución y garantía de calidad de los productos vendidos en nuestro sitio web. 
+     Por favor, consulte nuestra Política de Devolución y Garantía para obtener más información.</p>
+  <h2 class="section-title1">Limitaciones de responsabilidad</h2>
+  <p class="section-text2">NihonPC no será responsable de ningún daño directo, indirecto, especial, incidental o consecuente, incluyendo pero no limitado a pérdidas de ingresos, beneficios, 
+     datos o uso, que surjan de la utilización de nuestros servicios, incluso si se ha notificado previamente la posibilidad de tales daños.</p>
+  <h2 class="section-title1">Ley aplicable</h2>
+  <p class="section-text2">Estos términos y condiciones se regirán e interpretarán de acuerdo con las leyes de Chile,
+     y cualquier disputa que surja en relación con estos términos y condiciones se someterá a la jurisdicción exclusiva de los tribunales chilenos.</p>
+  <p class="section-text1">Gracias por elegir NihonPC como su tienda de hardware y periféricos en Chile. 
+    Esperamos que esta información le sea útil y le ayudará a entender mejor nuestras condiciones de uso. 
+    Si tiene alguna pregunta o comentario sobre nuestros términos y condiciones, por favor contáctenos a través de nuestro sitio web o correo electrónico.</p>   
+
   <footer>
     <img src="img/logo_size_invert.jpg" alt="" class="logo">
     <div class="social-container">
@@ -65,5 +106,5 @@
     <span class="copyright">&copy;2023, NihonPC. All rights reserved.</span>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-</body>
+</b ody>
 </html>
