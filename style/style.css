@@ -195,3 +195,16 @@ footer{
     margin: 20px;
     text-align: justify;
 }
+
+.shipping-info {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.shipping-info ul {
+    list-style-type: none;
+}
+
+.devo {
+    list-style-type: none;
+}
