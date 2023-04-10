@@ -24,6 +24,7 @@
         <div class="form-group was-validated">
             <label class="form-label" for="password">Contraseña</label>
             <input class="form-control" type="password" id="password" required>
+            
             <div class="invalid-feedback">
                 Por favor ingresa tu paswword
             </div>
@@ -32,9 +33,25 @@
             <input class="form-check-input" type="checkbox" id="check">
             <label class="form-check-label" for="check">Recordar</label>
         </div>
-        <a class="btn btn-primary" href="index_sesion.html">Ingresar</a>     
+        <button class="btn btn-primary"  onclick="admin()">Ingresar</button>
+        <script>
+            function admin()
+                {
+                    var email = document.getElementById("email").value;
+                    var password = document.getElementById("password").value;
+                    
+                    if (email === "admin@admin.cl")
+                    {
+                        window.location.href = 'admin.html'; 
+                    }
+                    else
+                    {
+                        window.location.href = 'index_sesion.html';
+                    }
+                }
+        </script>     
     </form>
-
+    
     </div>
       
     
