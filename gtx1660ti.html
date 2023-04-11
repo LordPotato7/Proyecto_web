@@ -43,7 +43,18 @@
         <li class="nav-item">
           <a class="nav-link" href="contactos.html">Contactos</a>
         </li>
-      </ul>      
+      </ul>
+      <div class="dropdown-center">
+        <button class="btn btn-outline-secondary m-lg-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fas fa-shopping-cart"></i> Carrito
+        </button>        
+        <ul class="dropdown-menu text-center">
+          <li><p class="dropdown"><span id="cantidad">Cantidad </span><span id="productos"> 0</span></p></li>
+          <li><p class="dropdown">Total $<span id="total">0</span></p></li>
+          <li><button class="dropdown-item" onclick="vaciarCarrito()">Vaciar carrito</button></li>
+          <li><button class="dropdown-item" onclick="window.location.href='pago.html'">Pagar</button></li>
+        </ul>
+      </div>      
       <a class="btn btn-outline-secondary m-lg-2" href="sesion.html">Iniciar sesión</a>
       <a class="btn btn-outline-secondary" href="creacion_cuenta.html">Crear Cuenta</a>   
     </div>
@@ -75,11 +86,7 @@
               </p>
               <p class="fw-bold">Precio: $<span id="precio">299.990</span></p>
               <form>
-                <div class="mb-3">
-                  <label for="cantidad" class="form-label">Cantidad:</label>
-                  <input type="number" class="form-control" id="cantidad" value="1" min="1">
-                </div>
-                <button type="submit" class="btn btn-primary button">Agregar al carro de compra</button>
+                <button type="button" class="btn btn-primary button" id="btn-agregar" onclick="añadir();">Agregar al carro de compra</button>
               </form>
             </div>
           </div>
