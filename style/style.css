@@ -214,20 +214,11 @@ footer{
     margin-bottom: 40px;
 }
 
-.my-cart-button {
-  background-color: #333 !important;
-  color: #fff !important;
-}
-
-.dropdown-menu {
-  min-width: 200px;
+.dropdown-menu li p {
+    color: #fff !important;
 }
 
 .dropdown-item {
-  padding: 8px;
-  color: #fff;
-}
-
-.dropdown-item:hover {
-    color: #fff;
-}
+    color: #fff !important;
+  }
+  

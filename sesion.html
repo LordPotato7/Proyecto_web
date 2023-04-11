@@ -15,42 +15,40 @@
     
     <form class="needs-validation">
         <div class="form-group was-validated">
-            <label class="form-label" for="email">Email</label>
-            <input class="form-control" type="email" id="email" required>
-            <div class="invalid-feedback">
-                Porfavor ingresa tu email
-            </div>
+          <label class="form-label" for="email">Email</label>
+          <input class="form-control" type="email" id="email" required>
+          <div class="invalid-feedback">
+            Porfavor ingresa tu email
+          </div>
         </div>
         <div class="form-group was-validated">
-            <label class="form-label" for="password">Contraseña</label>
-            <input class="form-control" type="password" id="password" required>
-            
-            <div class="invalid-feedback">
-                Por favor ingresa tu paswword
-            </div>
+          <label class="form-label" for="password">Contraseña</label>
+          <input class="form-control" type="password" id="password" required>
+      
+          <div class="invalid-feedback">
+            Por favor ingresa tu paswword
+          </div>
         </div>
         <div class="form-group form-check">
-            <input class="form-check-input" type="checkbox" id="check">
-            <label class="form-check-label" for="check">Recordar</label>
+          <input class="form-check-input" type="checkbox" id="check">
+          <label class="form-check-label" for="check">Recordar</label>
         </div>
-        <button class="btn btn-primary"  onclick="admin()">Ingresar</button>
+        <button class="btn btn-primary m-lg-2" onclick="admin()">Ingresar</button>
+        <a class="btn btn-outline-secondary m-lg-2" href="administrador.html">Crear Cuenta</a>     
         <script>
-            function admin()
-                {
-                    var email = document.getElementById("email").value;
-                    var password = document.getElementById("password").value;
-                    
-                    if (email === "admin@admin.cl")
-                    {
-                        window.location.href = 'admin.html'; 
-                    }
-                    else
-                    {
-                        window.location.href = 'index.html';
-                    }
-                }
+          function admin() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+      
+            if (email === "admin@admin.cl") {
+              window.location.href = 'admin.html'; 
+            } else {
+              window.location.href = 'index.html';
+            }
+          }
         </script>     
-    </form>
+      </form>
+      
     
     </div>
       
