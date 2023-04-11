@@ -94,7 +94,7 @@ footer{
 
 .dropdown-menu {
     background-color: #333;
-  }
+}
   
 .dropdown-toggle {
     color: #141414 !important;
@@ -208,3 +208,30 @@ footer{
 .devo {
     list-style-type: none;
 }
+
+.containerku {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.dropdown-menu li p {
+    color: #fff !important;
+}
+
+.dropdown-item {
+    color: #fff !important;
+  }
+  
+ 
+.table {
+    margin-bottom: 200px;
+    margin-top: 20px;
+  }
+
+.agregar-btn {
+    margin-bottom: 40px;
+    float: right;
+    margin-right: 20px;
+}
+  
+   

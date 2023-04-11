@@ -1,17 +1,31 @@
 var contador = document.getElementById("productos");
-var precio = parseFloat(document.getElementById("precio").textContent) 
+var precio = parseFloat(document.getElementById("precio").textContent);
 var total = document.getElementById("total");
 
-var cont = 0;
-var tot = 0;
+var datosDelCarrito = JSON.parse(localStorage.getItem("carrito")) || { cont: 0, tot: 0 };
 
-function añadir()
-{
-    cont += 1;
-    contador.innerText = cont;
+var cont = datosDelCarrito.cont;
+var tot = datosDelCarrito.tot;
 
-    tot = precio + parseFloat(total.textContent); 
+function actualizarCarrito() {
+  contador.innerText = cont;
+  total.textContent = tot.toFixed(3);
+}
 
-    total.textContent = tot;
+function añadir() {
+  cont += 1;
+  tot = precio + parseFloat(total.textContent);
 
+  localStorage.setItem("carrito", JSON.stringify({ cont: cont, tot: tot }));
+
+  actualizarCarrito();
+}
+
+actualizarCarrito();
+
+function vaciarCarrito() {
+  cont = 0;
+  tot = 0;
+  localStorage.removeItem("carrito");
+  actualizarCarrito();
 }

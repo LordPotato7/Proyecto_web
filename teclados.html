@@ -43,68 +43,97 @@
         <li class="nav-item">
           <a class="nav-link" href="contactos.html">Contactos</a>
         </li>
-        <div class="dropdown-center">
-          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Carrito
-          </button>
-          <ul class="dropdown-menu text-center">
-            <li><p class="dropdown-item bg-light"><span id="cantidad">Cantidad</span></p></li>
-            <li><p class="dropdown-item bg-light"><span id="productos">0</span></p></li>
-            <li><p class="dropdown-item bg-light">total</span></p></li>
-            <li><p class="dropdown-item bg-light"><span id="total">0</span>$</p></li>
-            <li><button class="btn btn-primary "><a href="pago.html">Pagar</a></button></li>
-          </ul>
-        </div>
-      </ul>      
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Busca tu producto..." aria-label="Search">
-        <button class="btn btn-outline-secondary form-btn" type="submit"><i class="fa fa-search"></i></button>
-      </form>
-      <a class="btn btn-outline-secondary" href="index.html">Cerrar sesion</a>     
+      </ul>
+      <div class="dropdown-center">
+        <button class="btn btn-outline-secondary m-lg-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fas fa-shopping-cart"></i> Carrito
+        </button>        
+        <ul class="dropdown-menu text-center">
+          <li><p class="dropdown"><span id="cantidad">Cantidad </span><span id="productos"> 0</span></p></li>
+          <li><p class="dropdown">Total $<span id="total">0</span></p></li>
+          <li><button class="dropdown-item" onclick="vaciarCarrito()">Vaciar carrito</button></li>
+          <li><button class="dropdown-item" onclick="window.location.href='pago.html'">Pagar</button></li>
+        </ul>
+      </div>      
+      <a class="btn btn-outline-secondary m-lg-2" href="sesion.html">Iniciar sesión</a>
+      <a class="btn btn-outline-secondary" href="creacion_cuenta.html">Crear Cuenta</a>   
     </div>
   </div>
 </nav>
 <!--Contenido de la pagina-->
 <section class="featured-section">
   <div class="container">
-    <h2>Teclados</h2>
+    <h2 class="section-title1">Teclados</h2>
     <div class="row">
       <div class="col-md-4 mb-4">
         <div class="card">
           <img src="img/teclados/teclado_kumara.png" alt="Producto 1" class="card-img-top">
           <div class="card-body">
-            <h5 class="card-title">Teclado mecánico RGB</h5>
+            <h5 class="card-title">Teclado Redragon Kumara K552</h5>
             <p class="card-text">Ideal para gamers y para aquellos que buscan una experiencia de escritura única.</p>
-            <p class="text-primary">Precio: <span id="precio">500000</span>$</p>
-            <button class="btn btn-primary button" onclick="añadir()">Añadir a Carrito</button>
+            <p class="fw-bold">Precio: $<span id="precio">30.990</span></p>
+            <a href="kumara.html" class="btn btn-primary button">Ver</a>
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="img/product-2.jpg" alt="Producto 2" class="card-img-top">
+          <img src="img/teclados/teclado_kumara.png" alt="Producto 2" class="card-img-top">
           <div class="card-body">
-            <h5 class="card-title">Mouse inalámbrico</h5>
-            <p class="card-text">Diseñado para brindar la mayor precisión en tus movimientos y reducir la fatiga.</p>
-            <a href="#" class="btn btn-primary">Ver más</a>
+            <h5 class="card-title">Teclado Redragon Kumara K552</h5>
+            <p class="card-text">Ideal para gamers y para aquellos que buscan una experiencia de escritura única.</p>
+            <p class="fw-bold">Precio: $<span id="precio">30.990</span></p>
+            <a href="kumara.html" class="btn btn-primary button">Ver</a>
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="img/product-3.jpg" alt="Producto 3" class="card-img-top">
+          <img src="img/teclados/teclado_kumara.png" alt="Producto 3" class="card-img-top">
           <div class="card-body">
-            <h5 class="card-title">Tarjeta gráfica GeForce RTX 3080</h5>
-            <p class="card-text">Con tecnología Ray Tracing para una experiencia de juego increíblemente realista.</p>
-            <a href="#" class="btn btn-primary">Ver más</a>
+            <h5 class="card-title">Teclado Redragon Kumara K552</h5>
+            <p class="card-text">Ideal para gamers y para aquellos que buscan una experiencia de escritura única.</p>
+            <p class="fw-bold">Precio: $<span id="precio">30.990</span></p>
+            <a href="kumara.html" class="btn btn-primary button">Ver</a>
           </div>
         </div>
-      </div>
+      </div>        
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="img/teclados/teclado_kumara.png" alt="Producto 4" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Teclado Redragon Kumara K552</h5>
+            <p class="card-text">Ideal para gamers y para aquellos que buscan una experiencia de escritura única.</p>
+            <p class="fw-bold">Precio: $<span id="precio">30.990</span></p>
+            <a href="kumara.html" class="btn btn-primary button">Ver</a>
+          </div>
+        </div>
+      </div>   
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="img/teclados/teclado_kumara.png" alt="Producto 5" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Teclado Redragon Kumara K552</h5>
+            <p class="card-text">Ideal para gamers y para aquellos que buscan una experiencia de escritura única.</p>
+            <p class="fw-bold">Precio: $<span id="precio">30.990</span></p>
+            <a href="kumara.html" class="btn btn-primary button">Ver</a>
+          </div>
+        </div>
+      </div>   
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="img/teclados/teclado_kumara.png" alt="Producto 6" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Teclado Redragon Kumara K552</h5>
+            <p class="card-text">Ideal para gamers y para aquellos que buscan una experiencia de escritura única.</p>
+            <p class="fw-bold">Precio: $<span id="precio">30.990</span></p>
+            <a href="kumara.html" class="btn btn-primary button">Ver</a>
+          </div>
+        </div>
+      </div>   
     </div>
   </div>
 </section>
-
-  </nav>
   <!-- Pied de la pagina-->
   <footer>
     <img src="img/logo_size_invert.jpg" alt="" class="logo">

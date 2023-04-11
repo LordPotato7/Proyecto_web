@@ -48,3 +48,14 @@ body {
 .credit-card-div img { padding-top:30px; }
 .credit-card-div .small-font { font-size:9px; }
 .credit-card-div .pad-adjust { padding-top:10px; }
+
+.btn {
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.table {
+  margin-bottom: 20px;
+}
+
+
