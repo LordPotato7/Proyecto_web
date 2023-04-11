@@ -222,3 +222,16 @@ footer{
     color: #fff !important;
   }
   
+ 
+.table {
+    margin-bottom: 200px;
+    margin-top: 20px;
+  }
+
+.agregar-btn {
+    margin-bottom: 40px;
+    float: right;
+    margin-right: 20px;
+}
+  
+   
