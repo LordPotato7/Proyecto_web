@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     
-    document.getElementById("formularioP").addEventListener('submit', validarFormularioP); 
+    document.getElementById("formularioP").addEventListener('blur', validarFormularioP); 
   });
 
 

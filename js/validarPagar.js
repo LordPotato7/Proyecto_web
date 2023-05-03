@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
     
-    document.getElementById("PagarForm").addEventListener('submit', validarFormularioP); 
+    document.getElementById("pago").addEventListener("submit", validarFormularioPago); 
   });
 
-  validarFormularioP(evento)
+  function validarFormularioPago(evento)
   {
     evento.preventDefault();
 
@@ -20,12 +20,13 @@ document.addEventListener("DOMContentLoaded", function() {
     if (mes < 1 || mes > 12)
     {
         document.getElementById("alertaM").textContent = "el mes es invalido";
+        document.getElementById("alertaN").textContent = "";
         return;
     }
 
     var años = parseInt(document.getElementById("año").value)
 
-    if( año < 23|| año > 99 )
+    if( años < 23|| años > 99 )
     {
         document.getElementById("alertaA").textContent = "el año es invalido";
         return;
@@ -33,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var ccv = parseInt(document.getElementById("ccv").value)
 
-    if(ccv <99 || ccv >999){
+    if(ccv < 100 || ccv >999){
         document.getElementById("alertaC").textContent = "el ccv es invalido";
         return;
     }
