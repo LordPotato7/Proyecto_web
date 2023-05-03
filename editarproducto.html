@@ -15,37 +15,31 @@
     <div class="login">
       <h1 class="text-center">Modificación de producto</h1>
 
-      <form class="needs-validation">
-        <div class="form-group was-validated">
+      <form  id="formularioP" action="administradorp.html">
+        <div class="form-group ">
           <label class="form-label" for="ID">ID del producto</label>
-          <input class="form-control" type="number" id="ID" required />
-          <div class="invalid-feedback">
-            Porfavor ingresa el ID del producto
-          </div>
+          <input class="form-control" type="number" id="ID" />
+          <h6 class="text-danger" id="alertaID"></h6>
         </div>
-        <div class="form-group was-validated">
+        <div class="form-group ">
           <label class="form-label" for="Nombre">Nombre Producto</label>
-          <input class="form-control" type="text" id="Nombre" required />
-          <div class="invalid-feedback">
-            Porfavor ingresa el nombre del producto
-          </div>
+          <input class="form-control" type="text" id="Nombre" />
+          <h6 class="text-danger" id="alertaN"></h6>
         </div>
-        <div class="form-group was-validated">
+        <div class="form-group ">
           <label class="form-label" for="codigo">Codigo Producto</label>
-          <input class="form-control" type="number" id="codigo" required />
-          <div class="invalid-feedback">
-            Porfavor ingresa el codigo del producto
-          </div>
+          <input class="form-control" type="number" id="codigo"  />
+          <h6 class="text-danger" id="alertaC"></h6>
         </div>
-        <div class="form-group was-validated">
+        <div class="form-group ">
           <label class="form-label" for="precio">precio del producto</label>
-          <input class="form-control" type="number" id="precio" required />
-          <div class="invalid-feedback">Por favor ingrese el precio</div>
+          <input class="form-control" type="number" id="precio" />
+          <h6 class="text-danger" id="alertaP"></h6>
         </div>
         <div class="form-group">
             <p>Categoria</p>
-            <select id="dropdown" name="role" class="form-control" required>
-              <option disabled selected value>Select la categoria</option>
+            <select id="dropdown" name="role"  class="form-control" >
+              <option value="0">Seleccione la categoria</option>
               <option value="teclados">Teclado</option>
               <option value="mouse">mouse</option>
               <option value="tarjetas">Tarjeta de video</option>
@@ -55,14 +49,20 @@
               <option value="Placa">placa madre</option>
               <option value="Fuente">Fuente de poder</option>
             </select>
+            <h6 class="text-danger" id="alertaS"></h6>
           </div>
           <div class="form-group">
             <label class="form-label" for="imagen">Imagen del Producto</label>
             <input class="form-control" type="file" name="imagen" id="imagen" />
+            <h6 class="text-danger" id="alertaI"></h6>
           </div>
-          <a class="btn btn-primary agregar-btn" href="administradorp.html">Modificar</a>
-          <a class="btn btn-secondary cancelar-btn" href="administradorp.html">Cancelar</a> 
-        </form>
+          <div class="container-fluid text-center">
+            <input class="btn btn-primary px-xxl-5" type="submit" value="Modificar">  
+            <a class="btn btn-secondary cancelar-btn" href="administradorp.html">Cancelar</a> 
+          </div>
+
+          </form>
       </div>
+      <script src="js/validarP.js"></script>
     </body>
   </html>

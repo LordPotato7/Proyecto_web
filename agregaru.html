@@ -15,27 +15,24 @@
     <div class="login">
       <h1 class="text-center">Agregar usuarios</h1>
 
-      <form class="needs-validation">
-        <div class="form-group was-validated">
+      <form action="/administradoru.html"  id="formulario">
+        <div class="form-group">
           <label class="form-label" for="Nombre">Nombre</label>
-          <input class="form-control" type="text" id="Nombre" required />
-          <div class="invalid-feedback">
-            Por favor ingresa el nombre del usuario
-          </div>
+          <input class="form-control" type="text" id="Nombre"/>
+          <h6 class="text-danger" id="alertaN"></h6>
+          
         </div>
-        <div class="form-group was-validated">
+        <div class="form-group ">
           <label class="form-label" for="email">Correo electrónico</label>
-          <input class="form-control" type="email" id="email" required />
-          <div class="invalid-feedback">
-            Por favor ingresa un correo electrónico válido
-          </div>
+          <input class="form-control" type="email" id="email"  />
+          <h6 class="text-danger" id="alertaE"></h6>
+          
         </div>
-        <div class="form-group was-validated">
+        <div class="form-group">
           <label class="form-label" for="password">Contraseña</label>
-          <input class="form-control" type="password" id="password" required />
-          <div class="invalid-feedback">
-            Por favor ingresa una contraseña
-          </div>
+          <input class="form-control" type="password" id="password"  />
+          <h6 class="text-danger" id="alertaP"></h6>
+          
         </div>
         <div class="form-group">
           <p>Rol</p>
@@ -48,11 +45,15 @@
         <div class="form-group">
           <label class="form-label" for="imagen">Imagen de perfil</label>
           <input class="form-control" type="file" name="imagen" id="imagen" />
+          <h6 class="text-danger" id="alertaI"></h6>
         </div>
-        <a class="btn btn-primary agregar-btn" href="administradoru.html">Agregar</a>
-        <a class="btn btn-secondary cancelar-btn" href="administradoru.html">Cancelar</a>        
+        <div class="container-fluid text-center">
+          <input class="btn btn-primary px-xxl-5" type="submit" value="Agregar">  
+          <a class="btn btn-secondary cancelar-btn" href="administradoru.html">Cancelar</a>
+        </div>        
       </form>
     </div>
-    
+    <script src="js/v_crearUsuarioa.js"></script>
+
   </body>
 </html>
