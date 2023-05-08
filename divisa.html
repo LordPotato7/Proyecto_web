@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conversor de Moneda</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="divisa.css">
+</head>
+<body>
+    <h1>Conversor de moneda</h1>
+    <img src="img/logo_size_invert.jpg" alt="logo  class="img-fluid" style="display: block; margin: auto;">
+    <div class="conversor">
+        <div class="input-container">
+            <input type="number" id="cantidad-uno" value="1">
+            <select id="moneda-uno">
+                <option value="CLP">CLP</option>
+                <option value="USD">Dólar estadounidense</option>
+                <option value="EUR">Euro</option>
+                <option value="GBP">Libra esterlina</option>
+                <option value="JPY">Yen japonés</option>
+            </select>
+        </div>
+        <div class="taza-container">
+            <button id="taza">⇆</button>
+        </div>
+        <div class="input-container">
+            <input type="number" id="cantidad-dos" value="0">
+            <select id="moneda-dos">
+                <option value="USD">Dólar estadounidense</option>
+                <option value="CLP">CLP</option>
+                <option value="EUR">Euro</option>
+                <option value="GBP">Libra esterlina</option>
+                <option value="JPY">Yen japonés</option>
+            </select>
+        </div>
+    </div>
+    <div class="resultado">
+        <p id="cambio"></p>
+    </div>
+    <a href="index.html" style="float: right;"><button>Volver</button></a>
+    <div class="texto-final">
+        <p>Conversor de moneda de NihonPC</p>
+        <p>Somos una tienda en línea especializada en productos de informática y tecnología</p>
+        <p>Ofrecemos una amplia gama de productos de alta calidad a precios competitivos</p>
+    </div>
+
+    <script src="divisa.js"></script>
+</body>
+</html>

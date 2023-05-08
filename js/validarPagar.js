@@ -26,9 +26,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var años = parseInt(document.getElementById("año").value)
 
-    if( años < 23|| años > 99 )
+    if( años < 23 || años > 99 )
     {
         document.getElementById("alertaA").textContent = "el año es invalido";
+        document.getElementById("alertaA").textContent = "";
         return;
     }
 
@@ -36,17 +37,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if(ccv < 100 || ccv >999){
         document.getElementById("alertaC").textContent = "el ccv es invalido";
+        document.getElementById("alertaC").textContent = "";
         return;
     }
     var nombre = document.getElementById('Nombre').value;
     if(nombre.length == 0) {
       
       document.getElementById("alertaN").textContent = "No has escrito nada en el nombre";
+      document.getElementById("alertaN").textContent = "";
       return;
     }
     if(nombre.length <= 3) {
         
         document.getElementById("alertaN").textContent = "El nombre no es suficientemente largo";
+        document.getElementById("alertaN").textContent = "";
         return;
       }
     this.submit();
