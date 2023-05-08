@@ -15,6 +15,16 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("alertaN").textContent = "El nombre no es suficientemente largo";
         return;
       }
+
+    var validNom = /^([0-9])*$/;
+
+    if (validNom.test(nombre))
+    {
+      document.getElementById("alertaN").textContent = "El nombre no puede contener numeros";
+      return;
+    }
+
+
       
 	  var emailField = document.getElementById('email');
 	  var validEmail =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
