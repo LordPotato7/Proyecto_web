@@ -30,6 +30,11 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("alertaP").textContent = "La clave no es válida";
       return;
     }
+    var clave = document.getElementById('password2').value;
+    if (clave.length <= 6) {
+      document.getElementById("alertaP2").textContent = "La clave no es válida";
+      return;
+    }
 
     var fileInput = document.getElementById("imagen");
     var file = fileInput.files[0];
