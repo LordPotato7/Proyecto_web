@@ -15,17 +15,19 @@
     <div class="login">
       <h1 class="text-center">Eliminación de productos</h1>
 
-      <form class="needs-validation">
-        <div class="form-group was-validated">
+      <form action="administradorp.html" id="formularioE" >
+        <div class="form-group ">
           <label class="form-label" for="codigo">ID o Código del Producto a Eliminar</label>
-          <input class="form-control" type="number" id="codigo" required />
-          <div class="invalid-feedback">
-            Porfavor ingresa el ID o código del producto a eliminar
-          </div>
+          <input class="form-control" type="number" id="codigo" />
+          <h6 class="text-danger" id="alertaa"></h6>
+          
         </div>
-        <a class="btn btn-danger eliminar-btn" href="administradorp.html">Eliminar</a>
-        <a class="btn btn-secondary regresar-btn" href="administradorp.html">Regresar</a> 
+        <div class="container-fluid text-center">
+          <input class="btn btn-primary px-xxl-5" type="submit" value="Eliminar">
+          <a class="btn btn-secondary regresar-btn" href="administradorp.html">Regresar</a>
+        </div> 
       </form>
     </div>
+    <script src="js/validarE.js"></script>
   </body>
 </html>
