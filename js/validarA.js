@@ -22,7 +22,14 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("alertaN").textContent = "El nombre no es suficientemente largo";
         return;
       }
-    
+    var validNom = /^([0-9])*$/;
+
+    if (validNom.test(nombre))
+    {
+      document.getElementById("alertaN").textContent = "El nombre no puede contener numeros";
+      return;
+    }
+
     var cod = parseInt(document.getElementById("codigo").value);
 
     if (cod <= 8)

@@ -53,5 +53,6 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("alertaN").textContent = "";
         return;
       }
+      
     this.submit();
   }
