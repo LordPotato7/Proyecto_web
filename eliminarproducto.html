@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NihonPC</title>
+    <link rel="stylesheet" href="style/sign.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="bg-dark">
+    <div class="login">
+      <h1 class="text-center">Eliminación de productos</h1>
+
+      <form action="administradorp.html" id="formularioE" >
+        <div class="form-group ">
+          <label class="form-label" for="codigo">ID o Código del Producto a Eliminar</label>
+          <input class="form-control" type="number" id="codigo" />
+          <h6 class="text-danger" id="alertaa"></h6>
+          
+        </div>
+        <div class="container-fluid text-center">
+          <input class="btn btn-primary px-xxl-5" type="submit" value="Eliminar">
+          <a class="btn btn-secondary regresar-btn" href="administradorp.html">Regresar</a>
+        </div> 
+      </form>
+    </div>
+    <script src="js/validarE.js"></script>
+  </body>
+</html>
